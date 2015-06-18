@@ -1,0 +1,29 @@
+﻿<h2>Calculator</h2>
+
+<form action="SendCalcMessage.rails" method="post">
+
+<p>
+Num 1: $FormHelper.NumberField("calculator.num1")
+</p>
+
+<p>
+Operation: $FormHelper.TextField("calculator.op") (add, subtract, multiply, divide)
+</p>
+
+<p>
+  Num 2: $FormHelper.NumberField("calculator.num2")
+</p>
+
+<br />
+
+<p>
+  Answer: $!calculator.ans
+</p>
+
+<br />
+
+<p>
+<input type="submit" value="Calculate" />
+</p>
+
+</form>
